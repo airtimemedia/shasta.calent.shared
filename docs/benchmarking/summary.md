@@ -111,10 +111,11 @@ These configuration properties are optimized for the specific requirements of th
 
 Kafka Producer -> Consumer Group Worker
 
-## Shasta Clients Configuration
+## Producers (Shasta Clients) Configuration
 
 - EC2 Instances: 128 m7.2xlarge
 - Producers per Instance: 8 
+- Event Rate: Varies (measured in pps - posts per second)
 
 ## Consumer Group Configuration
 
@@ -137,6 +138,8 @@ Kafka Producer -> Consumer Group Worker
 - Reserved Instance Hourly: $0.267
 
 ## Load Test Results
+
+Various load tests were conducted with different configurations. The "pps" in the test descriptions refers to "posts per second", which is the rate at which each producer sends events to Kafka.
 
 ### 8 producers, 8 workers, 6hr test, 2pps
 
